@@ -17,7 +17,9 @@ vim.api.nvim_create_user_command('RandomSomeone', function()
     local result = math.random(1, #options)
 
     -- Print result in Neovim
-   vim.api.nvim_put({options[result]}, 'c', true, true)
+   vim.api.nvim_put({'>[!Someone] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
+vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
 
@@ -40,7 +42,9 @@ vim.api.nvim_create_user_command('InsertObjectPurpose', function()
     local result = math.random(1, #options)
 
     -- Insert into the current cursor position
-    vim.api.nvim_put({options[result]}, 'c', true, true)
+    vim.api.nvim_put({'>[!Object] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
+vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
 
@@ -63,7 +67,9 @@ vim.api.nvim_create_user_command('InsertHazardType', function()
     local result = math.random(1, #options)
 
     -- Insert into the current cursor position
-    vim.api.nvim_put({options[result]}, 'c', true, true)
+    vim.api.nvim_put({'>[!Hazard] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
+vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
 vim.api.nvim_create_user_command('InsertPlaceDescriptor', function()
@@ -85,6 +91,8 @@ math.randomseed(os.time())
 local result = math.random(1, #options)
 
 -- Insert into the current cursor position
+vim.api.nvim_put({'>[!Place] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
 vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
@@ -108,6 +116,8 @@ math.randomseed(os.time())
 local result = math.random(1, #options)
 
 -- Insert into the current cursor position
+vim.api.nvim_put({'>[!Perception] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
 vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
@@ -130,6 +140,8 @@ math.randomseed(os.time())
 local result = math.random(1, #options)
 
 -- Insert into the current cursor position
+vim.api.nvim_put({'>[!Mood] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
 vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
@@ -192,6 +204,8 @@ math.randomseed(os.time())
 local result = math.random(1, #options)
 
 -- Insert into the current cursor position
+vim.api.nvim_put({'>[!Description] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
 vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
@@ -211,6 +225,8 @@ local options = {
 
 math.randomseed(os.time())
 local result = math.random(1, #options)
+vim.api.nvim_put({'>[!How Many] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
 vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
@@ -230,6 +246,8 @@ local options = {
 
 math.randomseed(os.time())
 local result = math.random(1, #options)
+vim.api.nvim_put({'>[!How Good] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
 vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
@@ -249,6 +267,8 @@ local options = {
 
 math.randomseed(os.time())
 local result = math.random(1, #options)
+vim.api.nvim_put({'>[!How Hard] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
 vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
@@ -268,6 +288,8 @@ local options = {
 }
 math.randomseed(os.time())
 local result = math.random(1, #options)
+vim.api.nvim_put({'>[!Discovery] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
 vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
@@ -287,6 +309,8 @@ local options = {
 }
 math.randomseed(os.time())
 local result = math.random(1, #options)
+vim.api.nvim_put({'>[!Intent] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
 vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
@@ -306,6 +330,8 @@ local options = {
 }
 math.randomseed(os.time())
 local result = math.random(1, #options)
+vim.api.nvim_put({'>[!Activity] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
 vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
@@ -325,6 +351,8 @@ local options = {
 }
 math.randomseed(os.time())
 local result = math.random(1, #options)
+vim.api.nvim_put({'>[!Problem] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
 vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
@@ -344,6 +372,8 @@ local options = {
 }
 math.randomseed(os.time())
 local result = math.random(1, #options)
+vim.api.nvim_put({'>[!Reason] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
 vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
@@ -363,7 +393,140 @@ local options = {
 }
 math.randomseed(os.time())
 local result = math.random(1, #options)
+vim.api.nvim_put({'>[!Explain] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
 vim.api.nvim_put({options[result]}, 'c', true, true)
 end, {})
 
+vim.api.nvim_create_user_command('InsertRandomBeat', function()
+local options = {
+    {"Endure a difficult complication", "InsertComplication"},
+    {"Play a triggering plot catalyst", "InsertCatalyst"},
+    {"Deal with a difficult challenge", "InsertChallenge"},
+    {"Put characters in a situation", "InsertSituation"},
+    {"Meet or recall a notable character", nil},
+    {"Lead to an interesting location", nil},
+    {"Reflect a world or game element", nil},
+    {"Handle a plot potential obstacle", nil},
+    {"Locate or trace a useful finding", nil},
+    {"Find answers to a pending question", nil}
+}
 
+math.randomseed(os.time())
+local result = math.random(1, #options)
+
+-- Insert the random beat at the cursor position
+vim.api.nvim_put({'>[!Random plot beat] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
+vim.api.nvim_put({options[result][1]}, 'c', true, true)
+
+-- If the beat refers to another table, automatically roll that too
+if options[result][2] then
+    vim.cmd("silent! " .. options[result][2])
+    end
+    end, {})
+
+-- Complication (A)
+vim.api.nvim_create_user_command('InsertComplication', function()
+local options = {
+    "An attack, a trap, or ambush!",
+    "Face plot unrelated opposition",
+    "Betrayal, or a change of mind",
+    "Location becomes a problem",
+    "Trouble with gear or supplies",
+    "Accident, or a disaster strikes",
+    "Someone needs help, badly",
+    "Misinformation, or deception",
+    "Delayed, blocked, or a detour",
+    "A character's flaw is triggered"
+}
+math.randomseed(os.time())
+local result = math.random(1, #options)
+vim.api.nvim_put({'>[!Complication] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
+vim.api.nvim_put({options[result]}, 'c', true, true)
+end, {})
+
+-- Catalyst (B)
+vim.api.nvim_create_user_command('InsertCatalyst', function()
+local options = {
+    "Discover a path, or location",
+    "Regret a recent decision",
+    "Uncover someone's secret",
+    "Chance for a trade, or loot",
+    "Address characters' needs",
+    "Temptation with a curiosity",
+    "Feel impact of remote event",
+    "Reveal a faction's intentions",
+    "Reaction of the environment",
+    "Trigger a character story arc"
+}
+math.randomseed(os.time())
+local result = math.random(1, #options)
+vim.api.nvim_put({'>[!Catalyst] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
+vim.api.nvim_put({options[result]}, 'c', true, true)
+end, {})
+
+-- Challenge (C)
+vim.api.nvim_create_user_command('InsertChallenge', function()
+local options = {
+    "Require first aid or medicine",
+    "Endure or resist a challenge",
+    "Strength or power could help",
+    "Use for craft, magic, or tech",
+    "Spot a useful object or item",
+    "Need for strong persuasion",
+    "Something fails or breaks",
+    "Some danger better to avoid",
+    "A locked door, object, or path",
+    "Recall knowledge or logic test"
+}
+math.randomseed(os.time())
+local result = math.random(1, #options)
+vim.api.nvim_put({'>[!Challenge] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
+vim.api.nvim_put({options[result]}, 'c', true, true)
+end, {})
+
+-- Situation (D)
+vim.api.nvim_create_user_command('InsertSituation', function()
+local options = {
+    "Worst-case scenario unfolds",
+    "Face an emergency or alarm",
+    "Being watched or followed",
+    "Risk harming a relationship",
+    "Unexpected twist or reveal",
+    "Sudden change in the place",
+    "Someone may be deceptive",
+    "A faction makes its move",
+    "Discover something of value",
+    "Best-case scenario occurs"
+}
+math.randomseed(os.time())
+local result = math.random(1, #options)
+vim.api.nvim_put({'>[!Situation] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
+vim.api.nvim_put({options[result]}, 'c', true, true)
+end, {})
+
+-- Propose a beat, but... (1d10)
+vim.api.nvim_create_user_command('InsertProposedBeat', function()
+local options = {
+    "Increase the intensity and tension",
+    "Bring someone quite inconvenient",
+    "Add some trouble, or bad news",
+    "Make the location less favorable",
+    "Cause frustration, stress, or worry",
+    "Cause confusion, doubts, disarray",
+    "Make the location more favorable",
+    "Add some reward, or good news",
+    "Bring someone quite convenient",
+    "Decrease the intensity and tension"
+}
+math.randomseed(os.time())
+local result = math.random(1, #options)
+vim.api.nvim_put({'>[!Proposed plot beat] '}, 'c', true, true)
+vim.api.nvim_put({'> '}, 'l', true, true)
+vim.api.nvim_put({options[result]}, 'c', true, true)
+end, {})
